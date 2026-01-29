@@ -6,7 +6,7 @@ import { useAuth } from '@/context/AuthContext';
 import { useIsAdmin } from '@/hooks/useIsAdmin';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, LogOut, Sunrise, Sunset, Lock, Shield, HelpCircle } from '@/components/icons';
+import { ArrowRight, LogOut, Sunrise, Sunset, Lock, Shield, Install } from '@/components/icons';
 import StressRating from '@/components/stress-rating';
 import AffirmationCard from '@/components/affirmation-card';
 import { affirmations } from '@/lib/affirmations';
@@ -227,7 +227,7 @@ export default function Dashboard() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <header className="p-4 flex justify-between items-center border-b" style={{ paddingTop: 'max(1rem, var(--safe-area-inset-top))', paddingLeft: 'max(1rem, var(--safe-area-inset-left))', paddingRight: 'max(1rem, var(--safe-area-inset-right))' }}>
-        <h1 className="text-xl font-headline font-bold">brain-kit.uk</h1>
+        <h1 className="text-xl font-headline font-bold">care-kit</h1>
         <div className="flex items-center gap-2">
           {isAdmin && (
             <Button variant="outline" size="sm" onClick={() => router.push('/admin')} className="gap-2">
@@ -236,13 +236,12 @@ export default function Dashboard() {
             </Button>
           )}
           <Button variant="ghost" size="icon" onClick={() => setShowInstallGuide(true)}>
-            <HelpCircle className="h-4 w-4" />
+            <Install className="h-4 w-4" />
             <span className="sr-only">Installation guide</span>
           </Button>
           <NotificationToggle />
           <div className="text-right text-sm">
             <div>{user.email}</div>
-            <div className="text-xs text-muted-foreground">Participant ID: {user.participantId}</div>
           </div>
           <Button variant="ghost" size="icon" onClick={() => { logout(); router.push('/login'); }}>
             <LogOut className="h-4 w-4" />

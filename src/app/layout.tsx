@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'brain-kit.uk',
+  title: 'care-kit',
   description: 'A study on the effects of daily affirmations on stress levels.',
   icons: {
     icon: '/brain-kit-capacitor-logo.png',

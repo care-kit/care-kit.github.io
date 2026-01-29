@@ -4,6 +4,8 @@ import { getFirestore } from 'firebase/firestore';
 import { getMessaging, isSupported } from 'firebase/messaging';
 
 // Your web app's Firebase configuration
+// Note: Firebase client API keys are meant to be public.
+// Security is enforced through Firestore Security Rules.
 const firebaseConfig = {
   apiKey: 'AIzaSyANh6YrHtu3gIfpUQPJTMpMUyPqh7YiFDU',
   authDomain: 'affirmation-study.firebaseapp.com',
