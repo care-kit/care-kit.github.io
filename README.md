@@ -1,5 +1,5 @@
 # Firebase Studio
 
-This is a NextJS starter in Firebase Studio.
+Next JS application purpose built for research project.
 
-To get started, take a look at src/app/page.tsx.
+Northumbria University

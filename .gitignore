@@ -39,6 +39,16 @@ next-env.d.ts
 .genkit/*
 .env*
 
+# Documentation (not needed in repo)
+FIREBASE_SETUP.md
+PWA_DEPLOYMENT_GUIDE.md
+TESTING_GUIDE.md
+FCM_TROUBLESHOOTING.md
+
+# Development files
+.modified
+.claude/
+
 # firebase
 firebase-debug.log
 firestore-debug.log
@@ -48,8 +58,9 @@ firestore-debug.log
 .idea/
 .idx/
 
-# Capacitor (if not using mobile apps)
+# Capacitor (not using mobile apps)
 ios/
 android/
 assets/
 icons/
+capacitor.config.ts
