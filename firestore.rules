@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return request.auth != null &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Stress data rules
+    match /stressData/{documentId} {
+      allow write: if request.auth != null;
+      allow read: if isAdmin();
+    }
+
+    // User data rules
+    match /users/{userId} {
+      // Users can read/write their own data
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Admins can read all user data
+      allow read: if isAdmin();
+      // Admins can write to set other users as admins
+      allow write: if isAdmin();
+    }
+
+    // Allow any user to read the counters document
+    match /counters/{counterId} {
+      allow read: if true;
+    }
+
+    // Default rule: deny all reads and writes unless explicitly allowed above
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Care Kit</title>
+    <script>
+      // SPA redirect script for GitHub Pages
+      // Redirects to index.html with path preserved in query string
+      const path = window.location.pathname;
+      if (path !== '/') {
+        window.location.replace('/?p=' + path);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- This content will not be shown as redirect happens immediately -->
+  </body>
+</html>

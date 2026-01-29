@@ -1,0 +1,16 @@
+export const affirmations: string[] = [
+  "My child sees the world with clarity and honesty, reminding me to embrace truth and authenticity in all I do.",
+  "Parenting my child has made me more patient, compassionate, and understanding—not just as a parent, but as a person.",
+  "I have learned to focus on what I can control, creating a safe and loving environment where my child can thrive.",
+  "My child's sense of justice, kindness, and inclusion inspires me to be a better advocate for all.",
+  "Through my child's eyes, I see the beauty in the small victories—every milestone is a triumph worth celebrating.",
+  "I have gained strength, resilience, and a powerful voice by advocating for my child—and in doing so, I have learned to advocate for myself too.",
+  "The way my child experiences joy—through flapping their arms, jumping, and laughing—teaches me to embrace happiness in its purest form.",
+  "My child’s love for their passions is contagious, reminding me that curiosity and excitement are gifts to be cherished.",
+  "Because of my child, I see the world differently—not as it is expected to be, but as it truly is.",
+  "My child has taught me the power of communication beyond words—every gesture, every look, every sound is filled with meaning.",
+  "I no longer worry about the judgments of others. I focus on my child, their needs, their joy, and their incredible journey.",
+  "I am part of a wonderful community of parents who support, uplift, and inspire one another—this journey is never walked alone.",
+  "My child’s presence in my life is a privilege, a daily reminder that being different is not only okay—it is beautiful.",
+  "I am forever grateful for the lessons my child teaches me—patience, acceptance, and the courage to see the world in a new way.",
+];
