@@ -35,9 +35,10 @@ jobs:
         run: npm ci
 
       - name: Build Next.js application
-        run: npm run build
+        run: NODE_OPTIONS="--max_old_space_size=4096" npm run build
         env:
           NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: 1
 
       - name: Add .nojekyll file
         run: touch out/.nojekyll
