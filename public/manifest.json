@@ -1,6 +1,6 @@
 {
-  "name": "BRAIN KIT",
-  "short_name": "BRAIN KIT",
+  "name": "care-kit",
+  "short_name": "care-kit",
   "description": "A study on the effects of daily affirmations on stress levels",
   "start_url": "/",
   "display": "standalone",
